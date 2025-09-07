@@ -6,30 +6,31 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "charactermain")  // adjust to your actual table name
 public class CharacterEntity {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
 
-    @Column(name = "FullName")
-    private String fullName;
+        @Id
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
+        private Long id;
 
-    @Column(name = "Faction")
-    private String faction;
+        @Column(name = "FullName")
+        private String fullName;
 
-    @Column(name = "updateDate")
-    private LocalDateTime updateDate;
+        @Column(name = "Faction")
+        private String faction;
 
-    @Column(name = "insertedDate")
-    private LocalDateTime insertedDate;
+        @Column(name = "updateDate")
+        private LocalDateTime updateDate;
 
-    @Column(name = "pic")
-    private String pic;
+        @Column(name = "insertedDate")
+        private LocalDateTime insertedDate;
 
-    @Column(name = "type")
-    private String type;
+        @Column(name = "pic")
+        private String pic;
 
-    @Column(name = "allegiance")
-    private Integer allegiance;
+        @Column(name = "type")
+        private String type;
+
+        @Column(name = "allegiance")
+        private Integer allegiance;
 
     // Getters & setters
     public Long getId() { return id; }
